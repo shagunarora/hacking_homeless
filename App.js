@@ -71,10 +71,9 @@ class App extends Component {
               style={{
                 width: 100,
                 height: 100,
-                borderRadius: 50,
                 alignSelf: "center"
               }}
-              source={require("./assets/medical.png")}
+              source={require("./assets/medicine.png")}
             />
           </View>
           <TouchableOpacity
@@ -84,10 +83,41 @@ class App extends Component {
             }}
           >
             <Text center secondary semibold>
-              Find benefits provided by government and fedral organisation in
-              your state
+              Take a look at benefits provided by government and federal
+              organisations in your state
             </Text>
           </TouchableOpacity>
+          <View
+            style={{
+              paddingTop: 20,
+              paddingBottom: 15
+            }}
+          >
+            <Image
+              style={{
+                width: 100,
+                height: 100,
+                alignSelf: "center"
+              }}
+              source={require("./assets/heart-icon.png")}
+            />
+          </View>
+          <TouchableOpacity
+            activeOpacity={0.8}
+            style={{
+              paddingHorizontal: 50
+            }}
+          >
+            <Text center secondary semibold>
+              Love helping others share your experience how healthcare
+              facilities helped you.
+            </Text>
+          </TouchableOpacity>
+          <View style={{ paddingTop: 30 }}>
+            <Text center secondary light>
+              Still working
+            </Text>
+          </View>
         </ScrollView>
       </Block>
     );
